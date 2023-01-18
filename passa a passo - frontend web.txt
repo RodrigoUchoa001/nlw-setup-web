@@ -1,0 +1,38 @@
+CRIAR PROJETO COM VITE:
+npm create vite@latest
+
+BAIXAR AS DEPENDENCIAS Q VEM COM O VITE:
+npm install
+
+BAIXAR O TAILWIND CSS:
+POSTCSS: PRA AUTOMATIZAR TAREFAS NO CSS
+AUTOPREFIXER: ADD PREFIXOS DE BROWSER
+npm install -D tailwindcss postcss autoprefixer
+
+INICIAR TAILWINDCSS:
+npx tailwindcss init -p
+
+INSTALAR EXTENSÕES:
+PostCSS language support
+Tailwind CSS IntelliSense
+
+CONFIGURACOES A SE FAZER:
+CRIAR O ARQUIVO:
+em src:
+    styles/global.css
+
+dentro colocar:
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+importar no App.tsx:
+import './styles/global.css'
+
+em tailwind.config.cjs:
+no content colocar:
+content: [
+    './src/**/*.tsx', <- vai estilizar, dentro de src, em qualquer pasta, todos os arquivos q seja .tsx
+    './index.html' <-poder estilizar o index.html direntamente
+]
