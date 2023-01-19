@@ -36,3 +36,6 @@ content: [
     './src/**/*.tsx', <- vai estilizar, dentro de src, em qualquer pasta, todos os arquivos q seja .tsx
     './index.html' <-poder estilizar o index.html direntamente
 ]
+
+PACOTE DE ICONES:
+npm i phosphor-react
